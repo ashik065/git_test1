@@ -1,14 +1,33 @@
-console.log("Hello world");
+// Integer type variable
+var integerVariable = 40; 
+console.log(integerVariable);
+console.log(typeof(integerVariable));
 
-var number1 = 10;
+// Float type variable
+var floatVariable = 30.4856;
+console.log(floatVariable);
+console.log(typeof(floatVariable));
 
-var number2 = true;
-var number3 = "50";
+// String type variable
+var stringVariable = "507";
+console.log(stringVariable);
+console.log(typeof(stringVariable));
 
-total = number1 + number3;
+//Boolean type variable
+var booleanVariable = true;
+console.log(booleanVariable);
+console.log(typeof(booleanVariable));
 
-console.log(total);
+//Parsing the string data and adding with integer
 
-console.log(typeof(number2));
+ var stringToNumber = parseInt(stringVariable);
+ var total = integerVariable + stringToNumber;
+ console.log(total);
 
+//Generating random values between 10 to 20
 
+var lowerLimit = 10;
+var upperLimit = 20;
+var limitDifference = upperLimit - lowerLimit;
+var randomValue = (Math.random() * lowerLimit) + limitDifference;
+console.log(Math.round(randomValue));
